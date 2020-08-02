@@ -13,7 +13,6 @@
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -24,18 +23,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-  .icon-whatsapp:before {
+.icon-whatsapp:before {
     content: "\e903";
-  }
-  .icon-instagram:before {
+}
+.icon-instagram:before {
     content: "\e904";
-  }
-  .icon-facebook:before {
+}
+.icon-facebook:before {
     content: "\e905";
-  }
-  .icon-mail:before {
+}
+.icon-mail:before {
     content: "\e906";
-  }
+}
 
 *{
     padding: 0;
@@ -49,7 +48,6 @@ body{
 .navbar{
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     min-height:100px;
     max-height: 150px;
@@ -71,7 +69,7 @@ body{
 .navbar-menu{
     display: flex;
     justify-content: center;
-    background-color: chartreuse;
+    margin-right: 50px;
     width: 400px;
     justify-content: space-evenly;
 }
@@ -87,10 +85,11 @@ body{
     display: inline;
     list-style: none;
     margin: 15px;
+    
+    font-weight: bold;
 }
 
 /* -------------------- MAIN ------------------- */
-
 .main{
     position: relative;
     background-image: url("./img/boxes.jpg");
@@ -102,7 +101,7 @@ body{
 }
 
 .main-presentation{
-    width: 80px;
+    width: 60px;
     height: auto;
     margin-top: 170px;
 }
