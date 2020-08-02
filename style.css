@@ -1,6 +1,49 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?qp76xo');
+    src:  url('fonts/icomoon.eot?qp76xo#iefix') format('embedded-opentype'),
+        url('./fonts/icomoon.ttf?qp76xo') format('truetype'),
+        url('./fonts/icomoon.woff?qp76xo') format('woff'),
+        url('./fonts/icomoon.svg?qp76xo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+  .icon-whatsapp:before {
+    content: "\e903";
+  }
+  .icon-instagram:before {
+    content: "\e904";
+  }
+  .icon-facebook:before {
+    content: "\e905";
+  }
+  .icon-mail:before {
+    content: "\e906";
+  }
+
 *{
     padding: 0;
     margin: 0;
+}
+
+body{
+    font-size: 20px;
 }
 /* -------------------- NAVBAR ------------------- */
 .navbar{
@@ -29,13 +72,15 @@
     display: flex;
     justify-content: center;
     background-color: chartreuse;
-    min-width: 300px;
+    width: 400px;
+    justify-content: space-evenly;
 }
 
 .navbar-menu ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 }
 
 .navbar-menu li{
@@ -54,4 +99,25 @@
     width: 100%;
     top: 0;
     z-index: 2;
+}
+
+.main-presentation{
+    width: 80px;
+    height: auto;
+    margin-top: 170px;
+}
+
+.main-presentation ul li{
+    display: flex;
+    font-size: 25px;
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
+    list-style-type: none;
+    margin-top: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
 }
