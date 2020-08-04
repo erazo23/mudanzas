@@ -43,17 +43,15 @@
 
 body{
     font-size: 20px;
+    font-family: 'Cabin', sans-serif;
 }
 /* -------------------- NAVBAR ------------------- */
 .navbar{
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    min-height:100px;
-    max-height: 150px;
+    min-height:20px;
+    height: 45px;
     justify-content: space-between;
-    position: relative;
-    z-index: 1;
+    background-color: black;
 }
 
 .navbar-brand{
@@ -64,12 +62,14 @@ body{
     height: 100px;
     justify-content: center;
     align-items: center;
+    font-size: 2em;
 }
 
 .navbar-menu{
     display: flex;
     justify-content: center;
     margin-right: 50px;
+    margin-left: 50px;
     width: 400px;
     justify-content: space-evenly;
 }
@@ -85,14 +85,19 @@ body{
     display: inline;
     list-style: none;
     margin: 15px;
-    
-    font-weight: bold;
+    padding: 15px;
+    font-family: 'Cabin', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-menu li:hover{
+    color: rgb(19, 97, 170);
 }
 
 /* -------------------- MAIN ------------------- */
 .main{
     position: relative;
-    background-image: url("./img/boxes.jpg");
+    background-image: url("./img/driver.jpg");
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -103,7 +108,7 @@ body{
 .main-presentation{
     width: 60px;
     height: auto;
-    margin-top: 170px;
+    margin-top: 470px;
 }
 
 .main-presentation ul li{
@@ -119,4 +124,78 @@ body{
     height: 35px;
     justify-content: center;
     align-items: center;
+}
+
+/* ------------------------- USER-TYPES ------------------------- */
+
+.user-types{
+    background-color: rgb(230, 230, 230);
+    
+    width: auto;
+    min-height: 470px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+    align-items: stretch;
+    padding: 30px;    
+    justify-content: center;
+    text-align: center;
+}
+
+.user-types h1{
+    position: absolute;
+    padding-top: 30px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 2em;
+    width: 100%;
+}
+
+.user-types-driver{
+    background-image: url("./img/car.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 48%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: -6px 0px 20px 0px rgba(0, 0, 0, 0.144);
+    padding-top: 150px;
+    font-size: 1.7em;
+}
+
+.user-types-driver span{
+    padding-top: 170px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+}
+
+.user-types-user{
+    display: flex;
+    background-image: url("./img/boxes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 48%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;  
+    box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.164);
+    font-size: 1.7em;
+    justify-content: space-between;
+    align-items: stretch;
+    
+}
+
+.user-types-user span{
+    padding-top: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgba(255, 255, 255, 0.644);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
 }
