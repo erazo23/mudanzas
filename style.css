@@ -49,6 +49,19 @@ body{
 ul{
     list-style: none;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(204, 56, 56);
+}
+
+ul li a{
+    color:rgb(105, 104, 104);
+
+}
 /* -------------------- NAVBAR ------------------- */
 .navbar{
     display: flex;
@@ -63,12 +76,14 @@ ul{
     position: relative;
     background-color: rgb(225, 65, 65);
     width: 200px;
-    height: 200px;
-    margin: 70px ;
+    height: 230px;
+    margin-left: 50px;
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    border-radius: 50%;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    
 }
 
 .navbar-menu{
@@ -104,10 +119,22 @@ ul{
     background-image: url("./img/driver.jpg");
     background-size: cover;
     height: 100vh;
-    
-    width: 100%;
-
+    width: auto;
     z-index: 2;
+}
+
+.introduction{
+    display: flex;
+    position: relative;
+    background-color: white;
+    font-size: 2rem;
+    height: 200px;
+    min-width: 300px;
+    width: 400px;
+    margin-left: 10px;
+    margin-top: 270px;
+    padding: 30px;
+    align-items: center;
 }
 
 .main-presentation{
@@ -210,7 +237,22 @@ ul{
     text-align: center;
 }
 
-/* ------------------------- FLEET-TYPES ------------------------- */
+.user-types button{
+    position: absolute;
+    background-color: rgb(204, 56, 56);
+    color: whitesmoke;
+    margin-top: 380px;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.user-types button:hover{
+    font-weight: bold;
+}
+
+/* ------------------------- HEALTH ------------------------- */
 
 .fleets-pandemia{
     background-color: rgb(230, 230, 230);
@@ -221,7 +263,6 @@ ul{
     align-items: space-around;
     padding: 30px;    
     justify-content: space-around;
-    text-align: center;
 }
 
 .fleets-pandemia div{
@@ -230,12 +271,21 @@ ul{
     margin: 30px;
     padding: 30px;
     text-align: justify;
-    font-size: 1.5em;
+    font-size: 1.9em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
 }
+
+.fleets-pandemia div span a{
+    color: rgb(204, 56, 56);
+}
+
+.fleets-pandemia div span a:hover{
+    color: rgb(199, 113, 79);
+}
+
 
 .img-corona{
     display: flex;
@@ -250,26 +300,27 @@ ul{
 .company{
     background-color: rgb(31, 30, 30);
     width: auto;
-    min-height: 300px;
+    min-height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: stretch;
 }
 
 .company div{
     display: flex;
-    width: 97%;
+    min-width: 25%;
     padding: 3%;
     text-align: justify;
     font-size: 1em;
-    color: rgb(160, 159, 159);
+    color: rgb(128, 126, 126);
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
 .company div ul li{
-    margin: 10px;
+    margin: 7px;
 }
 
 .contacto p{
