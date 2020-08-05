@@ -309,8 +309,8 @@ ul li a{
 
 .company div{
     display: flex;
-    min-width: 25%;
-    padding: 3%;
+    min-width: 23%;
+    padding: 2%;
     text-align: justify;
     font-size: 1em;
     color: rgb(128, 126, 126);
@@ -350,4 +350,109 @@ footer{
     align-items: center;
     justify-content: center;
     
+}
+
+/* ------------------------- MEDIA QUERIES ------------------------- */
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+@media screen and (max-width: 320px){
+
+    .navbar
+    {
+        flex-wrap: wrap;
+    }
+
+    .navbar-brand{
+        display: flex;
+        position: relative;
+        background-color: rgb(225, 65, 65);
+        width: 30%;
+        height: 100px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        border-radius: 50%;        
+    }
+
+    .navbar-menu ul{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-menu ul li{
+        width: 100%;
+        color: tomato;
+    }
+
+    .main{
+        background-attachment: scroll;
+        background-size: 160%;
+        background-repeat: no-repeat;
+    }
+
+    .introduction{
+        font-size: 1.4em;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        margin-top: 290px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introduction p{
+        text-align: center;
+    }
+
+    .main-presentation{
+        display: none;
+    }
+
+    .user-types{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .user-types h1{
+        position: relative;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .user-types-driver{
+        width: 100%;
+        height: 80px;
+        padding: auto;
+        margin: auto;
+        border-radius: 30px;
+        font-size: 1rem;
+        min-height: 150px;
+        text-align: center;
+    }
+
+    .user-types-user{
+        width: 100%;
+        padding: 0;
+        margin: auto;
+        border-radius: 30px;
+        font-size: 1rem;
+        min-height: 150px;
+    }
+
+    .user-types-driver span{
+        height: 100%;
+        border-radius: 30px;
+        text-align: center;
+        padding-top: 10px ;
+    }
 }
