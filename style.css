@@ -39,13 +39,13 @@
 *{
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: auto;
 }
 
 body{
     font-size: 17px;
     font-family: 'Cabin', sans-serif;
-    background-color: rgb(230, 230, 230)
+    background-color: rgb(230, 230, 230);
 }
 
 ul{
@@ -68,7 +68,7 @@ ul li a{
 .navbar{
     display: flex;
     min-height:20px;
-    height: 45px;
+    height: 55px;
     justify-content: space-between;
     background-color: black;
 }
@@ -122,7 +122,7 @@ ul li a{
     background-image: url("./img/driver.jpg");
     background-size: cover;
     height: 100vh;
-    width: auto;
+    width: 100%;
     z-index: 2;
 }
 
@@ -172,7 +172,7 @@ ul li a{
 
 .user-types{
     background-color: rgb(230, 230, 230);
-    width: auto;
+    width: 100%;
     min-height: 470px;
     height: auto;
     display: flex;
@@ -199,7 +199,7 @@ ul li a{
     background-size: cover;
     background-repeat: no-repeat;
     width:40%;
-    min-height: 80px;
+    min-height: 100px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     box-shadow: -6px 0px 20px 0px rgba(0, 0, 0, 0.144);
@@ -468,6 +468,236 @@ footer{
 }
 
 @media screen and (max-width: 480px){
+/* -------------------- NAVBAR ------------------- */
+.navbar{
+    height: 50px;
+}
+
+.navbar-brand{
+    position: relative;
+    height: 150px;
+    margin-left: 20px;
+}
+
+
+.navbar-menu li:hover{
+    color:rgb(211, 76, 76);
+}
+
+    .main{
+        background-attachment: scroll;
+        background-size: 160%;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    .introduction{
+        font-size: 1.4em;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        margin-top: 290px;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: black;
+    }
+
+    .introduction p{
+        text-align: center;
+    }
+
+    .main-presentation{
+        display: none;
+    }
+
+    .user-types{
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .user-types h1{
+        position: relative;
+        padding: 0;
+        margin: 5%;
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .user-types-driver{
+        display: flex;
+        width: auto;
+        height: 80px;
+
+        margin: 10px;
+        padding-top: 20px;
+        border-radius: 30px;
+        font-size: 1rem;
+        justify-content: center;
+        
+    }
+    
+    .user-types-driver span{
+        display: flex;
+        width: auto;
+        height: 80px;
+        border-radius: 30px;
+        text-align: center;
+        padding-top: 20px ;
+        margin: auto;
+    }
+    .user-types-user{
+        width: auto;
+        height: 80px;
+        padding: 0;
+        margin: 10px;
+        border-radius: 30px;
+        font-size: 1rem;
+        min-height: 150px;
+    }
+
+
+    .user-types-user p{
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: rgba(255, 255, 255, 0.644);
+        border-radius: 30px;
+        width: 100%;        
+    }
+
+    .user-types button{
+        display: block;
+        position: relative;
+        margin-top: 15px;
+        margin-left: auto;   
+        margin-right: auto;    
+    }
+
+    .fleets-pandemia div{
+
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 1.2em;
+    }
+    
+    .img-corona img{
+        width: auto;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .pay-methods{
+        
+        background-color: whitesmoke;
+        width: 100%;
+        height: auto;
+        padding: 0;
+
+    }
+    
+    .pay-methods span{
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: justify;
+        padding: 0;
+    }
+    
+    .pay-methods ul{
+        display: grid;
+        flex-wrap: wrap;
+        padding: auto;
+        font-size: 1.3rem;
+        text-align: center;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+    
+    .pay-methods ul li{
+        padding: 1rem;
+    }
+
+    /* ------------------------- FORM ------------------------- */
+
+.contact-form-info{
+    width: 100%;
+    min-width: 10rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.contact-form-input{
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    border-radius: 30px;   
+    font-weight: bold;
+    margin: 5%;
+    padding-top: 0;
+}
+
+.contact-form-input form{
+    display: flex;
+    font-size: 1rem;
+    padding: 4%;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-form-input form input{
+    margin: 5%;
+    height: 2rem;
+    width: auto;
+    font-size: 0.8rem;
+    text-align: center;
+
+}
+
+.contact-form-input button{
+    position: relative;
+    margin: auto;
+    height: 40px;
+}
+
+/* ------------------------- COMPANY ------------------------- */
+
+.company{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.company div{
+    display: flex;
+    min-width: 23%;
+    padding: 2%;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.company div ul li{
+    width: auto;
+    text-align: justify;
+}
+
+.redes ul li{
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.7rem;
+}
 
 }
 
