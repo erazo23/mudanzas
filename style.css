@@ -188,7 +188,7 @@ ul li a{
     position: absolute;
     padding-top: 30px;
     font-family: 'Cabin', sans-serif;
-    font-size: 2.3em;
+    font-size: 3rem;
     width: 100%;
 }
 
@@ -401,7 +401,7 @@ footer{
     width: 40%;
     min-width: 30rem;
     padding: 5%;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     color: rgba(238, 238, 238, 0.664);
     flex-direction: column;
     justify-content: center;
@@ -434,6 +434,9 @@ footer{
     border: 0;
     border-radius: 20px;
     padding-left: 1rem;
+    color: rgba(117, 116, 116, 0.829);
+    font-size: 1rem;
+
 }
 
 .contact-form-input button{
@@ -446,6 +449,11 @@ footer{
     border: 0;
     border-radius: 20px;
     background-color: rgb(204, 56, 56);
+    color: rgb(202, 201, 201);
+    font-size: 1rem;
+}
+
+.contact-form-input button:hover{
     color: whitesmoke;
 }
 

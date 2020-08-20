@@ -68,19 +68,19 @@
             <div class="contact-form-info">
                 <h3>Cotiza tu transporte.</h3>
                 <br>
-                <p>Déjanos tus datos y una descripción sobre lo que deseeas transportar. Nosotros nos contactamos contigo.</p>
+                <p>Déjanos tus datos y una descripción sobre lo que deseas transportar. Nosotros nos contactamos contigo.</p>
             </div>
             <div class="contact-form-input">
-                <form action="">
-                    <label for="">Nombre completo</label>
-                    <input type="text" name="" id="" placeholder="Escribe tu nombre.">
-                    <label for="">Telefono</label>
-                    <input type="tel" name="" id="" placeholder="Escribe tu teléfono.">
-                    <label for="">Correo</label>
-                    <input type="email" name="" id="" placeholder="Escribe tu correo.">
-                    <label for="">Descripción de tu carga</label>
-                    <input type="text" name="" id="" placeholder="Describe tu carga.">
-                    <button type="submit">Enviar</button>
+                <form action="" id="form">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" name="name" id="name" placeholder="Escribe tu nombre">
+                    <label for="callnumber">Telefono</label>
+                    <input type="text" name="callnumber" id="callnumber" placeholder="Escribe tu teléfono">
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" placeholder="Escribe tu correo">
+                    <label for="description">Descripción de tu carga</label>
+                    <input type="text" name="desc" id="description" placeholder="Describe tu carga">
+                    <button type="submit" name="submit" id="submit">Enviar</button>
                 </form>
             </div>
         </section>
@@ -120,5 +120,7 @@
     <footer>
         <span> © Fleet 2020. Todos los derechos reservados.</span>
     </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
