@@ -39,7 +39,6 @@
 *{
     padding: 0;
     margin: 0;
-    width: auto;
 }
 
 body{
@@ -84,8 +83,8 @@ ul li a{
     align-items: center;
     font-size: 2em;
     color: whitesmoke;
-    border-bottom-left-radius: 90%;
-    border-bottom-right-radius: 90%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
     
 }
 
@@ -272,7 +271,7 @@ ul li a{
 .fleets-pandemia div{
     height: 550px;
     width: 500px;
-    margin: 30px;
+
     padding: 30px;
     text-align: justify;
     font-size: 1.9em;
@@ -392,7 +391,6 @@ footer{
 
 .contact-form{
     background-color: rgb(204, 56, 56);
-
     display: flex;
     flex-wrap: wrap;
     width: auto;
@@ -432,7 +430,7 @@ footer{
     margin-top: 1.1rem;
     margin-bottom: 1.1rem;
     height: 2.5rem;
-    width: 27rem;
+    width: 25rem;
     background-color: rgba(255, 255, 255, 0.616);
     border: 0;
     border-radius: 20px;
@@ -464,26 +462,26 @@ footer{
 /* ------------------------- MEDIA QUERIES ------------------------- */
 
 @media screen and (max-width: 768px){
+    .navbar{
+        height: 50px;
 
-}
-
-@media screen and (max-width: 480px){
-/* -------------------- NAVBAR ------------------- */
-.navbar{
-    height: 50px;
-}
-
-.navbar-brand{
-    position: relative;
-    height: 150px;
-    margin-left: 20px;
-}
-
-
-.navbar-menu li:hover{
-    color:rgb(211, 76, 76);
-}
-
+    }
+    
+    .navbar-brand{
+        
+        position: relative;
+        min-height: 150px;
+        min-width: 150px;
+        width: 190px;
+        height: 200px;
+        margin-left: 10px;
+    }
+    
+    
+    .navbar-menu li:hover{
+        color:rgb(211, 76, 76);
+    }
+    
     .main{
         background-attachment: scroll;
         background-size: 160%;
@@ -492,7 +490,306 @@ footer{
     }
 
     .introduction{
-        font-size: 1.4em;
+        display: flex;
+        position: relative;
+        background-color: rgba(14, 14, 14, 0.712);
+        color: whitesmoke;
+        font-size: 1.4rem;
+        height: 200px;
+        min-width: 200px;
+        width: 300px;
+        margin-left: 10px;
+        margin-top: 220px;
+        padding: 30px;
+        align-items: center;
+    }
+
+    .introduction p{
+        text-align: center;
+    }
+
+    .main{
+        min-height: 600px;
+    }
+
+    .user-types{
+        background-color: rgb(230, 230, 230);
+        width: 90%;
+        min-height: 470px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 2;
+        align-items: stretch;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .user-types h1{
+        position: absolute;
+        padding-top: 30px;
+        font-family: 'Cabin', sans-serif;
+        font-size: 2rem;
+        width: 100%;
+    }
+    
+    .user-types-driver{
+        background-image: url("./img/car.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:50%;
+        min-height: 100px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        box-shadow: -6px 0px 20px 0px rgba(0, 0, 0, 0.144);
+        padding-top: 150px;
+        font-size: 1.7em;
+    }
+    
+    .user-types-driver span{
+        padding-top: 170px;
+        padding-left: 30px;
+        padding-right: 30px;
+        height: auto;
+        width: auto;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        text-align: center;
+    }
+    
+    .user-types-user{
+        display: flex;
+        background-image: url("./img/boxes.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50%;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;  
+        font-size: 1.7em;
+    }
+    
+    .user-types-user p{
+        padding-top: 150px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: rgba(255, 255, 255, 0.644);
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        width: 100%;
+        
+    }
+    
+    .user-types button{
+        position: absolute;
+        background-color: rgb(204, 56, 56);
+        color: whitesmoke;
+        margin-top: 380px;
+        width: 120px;
+        height: 40px;
+        border-radius: 20px;
+        border: 0;
+    }
+    
+    .user-types button:hover{
+        font-weight: bold;
+    }
+    
+    
+    /* ------------------------- HEALTH ------------------------- */
+    
+    .fleets-pandemia{
+        background-color: rgb(230, 230, 230);
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: space-around;
+        padding: 30px;    
+        justify-content: space-around;
+    }
+    
+    .fleets-pandemia div{
+        height: 420px;
+        width: 500px;
+        padding: 0;
+        text-align: justify;
+        font-size: 1.9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-corona{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .img-corona img{
+        width: auto;
+        height: 420px;
+    
+    }
+            .pay-methods{
+                
+                background-color: whitesmoke;
+                width: 100%;
+                height: auto;
+                padding: 0;
+        
+            }
+            
+            .pay-methods span{
+                width: 100%;
+                font-size: 1.3rem;
+                text-align: justify;
+                padding: 0;
+            }
+            
+            .pay-methods ul{
+                display: grid;
+                flex-wrap: wrap;
+                padding: auto;
+                font-size: 1.3rem;
+                text-align: center;
+                grid-template: 1fr 1fr / 1fr 1fr;
+            }
+            
+            .pay-methods ul li{
+                padding: 1rem;
+            }
+        
+            /* ------------------------- FORM ------------------------- */
+        
+        .contact-form-info{
+            width: 100%;
+            min-width: 10rem;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        
+        .contact-form-input{
+            width: 100%;
+            justify-content: space-evenly;
+            font-size: 1.4rem;
+            border-radius: 30px;   
+            font-weight: bold;
+            margin: 5%;
+            padding-top: 0;
+        }
+        
+        .contact-form-input form{
+            display: flex;
+            font-size: 1rem;
+            padding: 4%;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .contact-form-input form input{
+            margin: 5%;
+            height: 2rem;
+            width: auto;
+            font-size: 0.8rem;
+            text-align: center;
+        
+        }
+        
+        .contact-form-input button{
+            position: relative;
+            margin: auto;
+            height: 40px;
+        }
+        
+        /* ------------------------- COMPANY ------------------------- */
+        
+        .company{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+        }
+        
+        .company div{
+            display: flex;
+            min-width: 23%;
+            padding: 2%;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        
+        .company div ul li{
+            width: auto;
+            text-align: justify;
+        }
+        
+        .redes ul li{
+            display: flex;
+            font-size: 1.4rem;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        footer{
+            text-align: center;
+            font-size: 1rem;
+        } 
+}
+
+@media screen and (max-width: 480px){
+/* -------------------- NAVBAR ------------------- */
+.navbar{
+    height: 60px;
+    flex-wrap: wrap;
+}
+
+.navbar-brand{
+    display: flex;
+    position: relative;
+    background-color: rgb(225, 65, 65);
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border-radius: 100%;        
+}
+
+
+    .navbar-menu li:hover{
+        color:rgb(211, 76, 76);
+    }
+
+    .navbar-menu ul{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-menu ul li{
+        width: 100%;
+        color: tomato;
+    }
+
+    .main{
+        background-attachment: scroll;
+        background-size: 160%;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+
+    .introduction{
+        font-size: 1.2em;
         width: auto;
         margin: 0;
         padding: 0;
@@ -517,6 +814,7 @@ footer{
         margin: 0;
         padding: 0;
         justify-content: center;
+        width: 100%;
     }
 
     .user-types h1{
@@ -689,7 +987,7 @@ footer{
 
 .redes ul li{
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     justify-content: center;
     align-items: center;
 }
@@ -712,7 +1010,7 @@ footer{
         display: flex;
         position: relative;
         background-color: rgb(225, 65, 65);
-        width: 30%;
+        width: 100px;
         height: 100px;
         margin-top: 20px;
         margin-left: auto;
@@ -720,7 +1018,7 @@ footer{
         justify-content: center;
         align-items: center;
         font-size: 2em;
-        border-radius: 50%;        
+        border-radius: 100%;        
     }
 
     .navbar-menu ul{
