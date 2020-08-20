@@ -39,6 +39,7 @@
 *{
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 body{
@@ -198,6 +199,7 @@ ul li a{
     background-size: cover;
     background-repeat: no-repeat;
     width:40%;
+    min-height: 80px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     box-shadow: -6px 0px 20px 0px rgba(0, 0, 0, 0.144);
@@ -299,6 +301,7 @@ ul li a{
     width: auto;
     height: 600px;
 }
+/* ------------------------- COMPANY ------------------------- */
 
 .company{
     background-color: rgb(31, 30, 30);
@@ -361,7 +364,7 @@ footer{
     width: auto;
     height: auto;
     text-align: center;
-    
+    width: 100%;
     padding: 20px;
 }
 
@@ -434,6 +437,7 @@ footer{
     border: 0;
     border-radius: 20px;
     padding-left: 1rem;
+    padding-right: 1rem;
     color: rgba(117, 116, 116, 0.829);
     font-size: 1rem;
 
@@ -480,7 +484,9 @@ footer{
         background-color: rgb(225, 65, 65);
         width: 30%;
         height: 100px;
-        margin: auto;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
         justify-content: center;
         align-items: center;
         font-size: 2em;
@@ -503,6 +509,7 @@ footer{
         background-attachment: scroll;
         background-size: 160%;
         background-repeat: no-repeat;
+        height: 100%;
     }
 
     .introduction{
@@ -513,6 +520,8 @@ footer{
         margin-top: 290px;
         justify-content: center;
         align-items: center;
+        background-color: white;
+        color: black;
     }
 
     .introduction p{
@@ -526,38 +535,185 @@ footer{
     .user-types{
         flex-wrap: wrap;
         flex-direction: column;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
     }
 
     .user-types h1{
         position: relative;
         padding: 0;
+        margin: 5%;
         font-size: 1.2rem;
+        width: 90%;
     }
 
     .user-types-driver{
-        width: 100%;
-        height: 80px;
-        padding: auto;
-        margin: auto;
+        display: flex;
+        width: auto;
+
+        margin: 10px;
+        padding-top: 20px;
         border-radius: 30px;
         font-size: 1rem;
-        min-height: 150px;
-        text-align: center;
+        justify-content: center;
+        
     }
-
-    .user-types-user{
-        width: 100%;
-        padding: 0;
-        margin: auto;
-        border-radius: 30px;
-        font-size: 1rem;
-        min-height: 150px;
-    }
-
+    
     .user-types-driver span{
-        height: 100%;
+        display: flex;
+        width: auto;
+        height: 80px;
         border-radius: 30px;
         text-align: center;
-        padding-top: 10px ;
+        padding-top: 20px ;
+        margin: auto;
     }
+    .user-types-user{
+        width: auto;
+        height: 80px;
+        padding: 0;
+        margin: 10px;
+        border-radius: 30px;
+        font-size: 1rem;
+        min-height: 150px;
+    }
+
+
+    .user-types-user p{
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: rgba(255, 255, 255, 0.644);
+        border-radius: 30px;
+        width: 100%;        
+    }
+
+    .user-types button{
+        display: block;
+        position: relative;
+        margin-top: 15px;
+        margin-left: auto;   
+        margin-right: auto;    
+    }
+
+    .fleets-pandemia div{
+
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 1.2em;
+    }
+    
+    .img-corona img{
+        width: auto;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .pay-methods{
+        
+        background-color: whitesmoke;
+        width: 100%;
+        height: auto;
+        padding: 0;
+
+    }
+    
+    .pay-methods span{
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: justify;
+        padding: 0;
+    }
+    
+    .pay-methods ul{
+        padding: auto;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .pay-methods ul li{
+        padding: 1rem;
+    }
+
+    /* ------------------------- FORM ------------------------- */
+
+.contact-form-info{
+    width: 100%;
+    min-width: 10rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.contact-form-input{
+    width: 90%;
+    justify-content: center;
+    font-size: 1.4rem;
+    border-radius: 30px;   
+    font-weight: bold;
+    margin: 5%;
+    padding-top: 0;
+}
+
+.contact-form-input form{
+    display: flex;
+    font-size: 1rem;
+    padding: 4%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.contact-form-input form input{
+    margin: 5%;
+    height: 2rem;
+    width: auto;
+    font-size: 0.8rem;
+    text-align: center;
+
+}
+
+.contact-form-input button{
+    position: relative;
+    margin: auto;
+    height: 40px;
+}
+
+/* ------------------------- COMPANY ------------------------- */
+
+.company{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.company div{
+    display: flex;
+    min-width: 23%;
+    padding: 2%;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.company div ul li{
+    width: auto;
+    text-align: center;
+}
+
+.redes ul li{
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.7rem;
+}
+    
 }
