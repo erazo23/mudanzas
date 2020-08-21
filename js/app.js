@@ -26,3 +26,10 @@ form.addEventListener('submit', function(e){
         alert(err)
     })
 })
+
+var x = document.getElementById('more');
+
+
+const cambiar = () => {location.href = './perfiles.html';}
+
+x.onclick = cambiar;
