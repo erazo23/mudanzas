@@ -25,7 +25,7 @@ form.addEventListener('submit', function(e){
     .catch(function(err){
         alert(err)
     })
-})
+});
 
 var x = document.getElementById('more');
 
