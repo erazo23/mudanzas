@@ -135,7 +135,7 @@ ul li a{
     min-width: 300px;
     width: 400px;
     margin-left: 10px;
-    margin-top: 270px;
+    margin-top: 250px;
     padding: 30px;
     align-items: center;
 }
@@ -363,8 +363,8 @@ footer{
     width: auto;
     height: auto;
     text-align: center;
-    width: 90%;
-    padding: 5%;
+    width: 94%;
+    padding: 3%;
 }
 
 .pay-methods span{
@@ -373,7 +373,7 @@ footer{
 }
 
 .pay-methods ul{
-    padding: 4rem;
+    padding: 3rem;
     font-size: 1.3rem;
     display: flex;
     flex-wrap: wrap;
@@ -414,7 +414,7 @@ footer{
     width: 40%;
     min-width: 10rem;
     justify-content: center;
-    padding-top: 5%;
+    padding-top: 3%;
     font-size: 1.4rem;
     border-radius: 4rem;   
     font-weight: bold;
@@ -431,30 +431,33 @@ footer{
 }
 
 .contact-form-input form input{
-    margin-top: 1.1rem;
-    margin-bottom: 1.1rem;
+    outline: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     height: 2.5rem;
     width: 90%;
     background-color: rgba(255, 255, 255, 0.616);
     border: 0;
     border-radius: 20px;
-    padding-left: 1rem;
-    padding-right: 1rem;    
+    padding-left: 5%;
+    padding-right: 5%;    
     color: rgba(117, 116, 116, 0.829);
     font-size: 1rem;
 }
 
 .contact-form-input form textarea{
+    outline: none;
     margin-top: 1.1rem;
     margin-bottom: 1.1rem;
-    height: 7.5rem;
+    height: 5.5rem;
     width: 90%;
     background-color: rgba(255, 255, 255, 0.616);
     border: 0;
     border-radius: 20px;
-    padding: 1rem;
+    padding: 5%;
     color: rgba(117, 116, 116, 0.829);
     font-size: 1rem;
+    font-family: 'Cabin', sans-serif;
 }
 
 .contact-form-input button{
@@ -477,7 +480,7 @@ footer{
 
 /* ------------------------- MEDIA QUERIES ------------------------- */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .navbar{
         height: 50px;
 
@@ -515,7 +518,8 @@ footer{
         min-width: 200px;
         width: 300px;
         margin-left: 10px;
-        margin-top: 220px;
+        margin-top: 180px;
+        margin-bottom: 10px;
         padding: 30px;
         align-items: center;
     }
@@ -780,7 +784,6 @@ footer{
     border-radius: 100%;        
 }
 
-
     .navbar-menu li:hover{
         color:rgb(211, 76, 76);
     }
@@ -801,15 +804,15 @@ footer{
         background-attachment: scroll;
         background-size: 160%;
         background-repeat: no-repeat;
-        height: auto;
+        height: auto -10%;
     }
 
     .introduction{
         font-size: 1.2em;
         width: auto;
-        margin: 0;
-        padding: 0;
         margin-top: 290px;
+        margin-left: 0;
+        padding: 0;
         justify-content: center;
         align-items: center;
         background-color: white;
@@ -1015,7 +1018,7 @@ footer{
 
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 321px){
 
     .navbar
     {
@@ -1059,7 +1062,6 @@ footer{
     .introduction{
         font-size: 1.4em;
         width: auto;
-        margin: 0;
         padding: 0;
         margin-top: 290px;
         justify-content: center;

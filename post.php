@@ -4,7 +4,7 @@ $submit = $_POST['submit'];
 $name = $_POST['name'];
 $callnumber = $_POST['callnumber'];
 $email = $_POST['email'];
-$desc = $_POST['desc'];
+$desc = $_POST['area'];
 
 
 if ($name === '' || $callnumber === ''  || $email === ''  || $desc === '' ){
