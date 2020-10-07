@@ -36,6 +36,10 @@
     content: "\e906";
 }
 
+:root{
+    --rojo : #e30613;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -56,7 +60,7 @@ a{
 }
 
 a:hover{
-    color: rgb(204, 56, 56);
+    color: var(--rojo);
 }
 
 ul li a{
@@ -69,23 +73,25 @@ ul li a{
     min-height:20px;
     height: 55px;
     justify-content: space-between;
-    background-color: black;
+    background-color: white;
 }
 
 .navbar-brand{
     display: flex;
     position: relative;
-    background-color: rgb(225, 65, 65);
-    width: 200px;
-    height: 230px;
+    width: 300px;
+    height: 300px;
     margin-left: 50px;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
-    color: whitesmoke;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navbar-brand img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .navbar-menu{
@@ -109,10 +115,12 @@ ul li a{
     text-align: center;
     font-family: 'Cabin', sans-serif;
     color: rgb(255, 255, 255);
+    font-size: 1rem;
 }
 
 .navbar-menu li:hover{
-    color:rgb(211, 76, 76);
+    color:var(--rojo);
+    text-decoration: underline;
 }
 
 /* -------------------- MAIN ------------------- */
@@ -128,16 +136,31 @@ ul li a{
 .introduction{
     display: flex;
     position: relative;
-    background-color: rgba(14, 14, 14, 0.712);
-    color: whitesmoke;
-    font-size: 2rem;
+    background-color: whitesmoke;
+    color: rgba(14, 14, 14, 0.712);
+    font-size: 1.7rem;
     height: 200px;
     min-width: 300px;
     width: 400px;
     margin-left: 10px;
-    margin-top: 250px;
+    margin-top: 400px;
+    margin-bottom: auto;
     padding: 30px;
     align-items: center;
+    animation-duration: 0.8s;
+    animation-name: slidein;
+    overflow: hidden;
+}
+
+@keyframes slidein {
+    from{
+        margin-left: -30%;
+        /* height: 60% */
+    }
+    to{
+        margin-left: 10px;
+        
+    }
 }
 
 .main-presentation{
@@ -152,21 +175,50 @@ ul li a{
     display: flex;
     font-size: 25px;
     color: whitesmoke;
-    background-color: rgb(204, 56, 56);
+    background-color: var(--rojo);
     text-align: center;
     margin-top: 10px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    height: 35px;
+    height: 45px;
     justify-content: center;
     align-items: center;
+    animation: redes 1.2s ;
+    overflow: hidden;
+}
+
+@keyframes redes{
+    from{
+        margin-left: 100%;
+        width: 0;
+    }
+    to{
+        
+    }
+}
+
+.main-presentation ul li {
+    color: whitesmoke;
+    background-color: var(--rojo);
+    
 }
 
 .main-presentation ul li:hover{
-    color: rgb(204, 56, 56);
+    color: var(--rojo);
     background-color:whitesmoke ;
 }
 
+.main-presentation ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+}
+.main-presentation ul li a:hover{
+    color: var(--rojo);
+}
 /* ------------------------- USER-TYPES ------------------------- */
 
 .user-types{
@@ -182,6 +234,7 @@ ul li a{
     justify-content: center;
     text-align: center;
     margin-top: 30px;
+    overflow: hidden;
 }
 
 .user-types h1{
@@ -190,6 +243,7 @@ ul li a{
     font-family: 'Cabin', sans-serif;
     font-size: 3rem;
     width: 100%;
+    overflow: hidden;
 }
 
 .user-types-driver{
@@ -204,6 +258,7 @@ ul li a{
     box-shadow: -6px 0px 20px 0px rgba(0, 0, 0, 0.144);
     padding-top: 150px;
     font-size: 1.7em;
+    overflow-x: hidden;
 }
 
 .user-types-driver span{
@@ -215,6 +270,7 @@ ul li a{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     text-align: center;
+    overflow: hidden;
 }
 
 .user-types-user{
@@ -227,6 +283,7 @@ ul li a{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;  
     font-size: 1.7em;
+    overflow: hidden;
 }
 
 .user-types-user p{
@@ -237,22 +294,25 @@ ul li a{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     width: 100%;
-    
+    overflow: hidden;
 }
 
 .user-types button{
     position: absolute;
-    background-color: rgb(204, 56, 56);
+    background-color: var(--rojo);
     color: whitesmoke;
     margin-top: 380px;
     width: 120px;
     height: 40px;
     border-radius: 20px;
     border: 0;
+    overflow: hidden;
+    font-size: 0.9rem;
 }
 
 .user-types button:hover{
     font-weight: bold;
+    overflow: hidden;
 }
 
 /* ------------------------- HEALTH ------------------------- */
@@ -281,7 +341,7 @@ ul li a{
 }
 
 .fleets-pandemia div span a{
-    color: rgb(204, 56, 56);
+    color: var(--rojo);
 }
 
 .fleets-pandemia div span a:hover{
@@ -359,7 +419,7 @@ footer{
 /* ------------------------- PAY METHODS------------------------- */
 
 .pay-methods{
-    background-color: whitesmoke;
+    background-color: white;
     width: auto;
     height: auto;
     text-align: center;
@@ -384,13 +444,22 @@ footer{
 }
 
 .pay-methods ul li{
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay-methods  ul li img{
+    width: 50px;
+    height: 50px;
 }
 
 /* ------------------------- FORM ------------------------- */
 
 .contact-form{
-    background-color: rgb(204, 56, 56);
+    background-color: var(--rojo);
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -411,14 +480,14 @@ footer{
 .contact-form-input{
     display: flex;
     background-color: rgba(216, 216, 216, 0.836);
-    width: 40%;
+    width: 34%;
     min-width: 10rem;
     justify-content: center;
-    padding-top: 3%;
+    /* padding-top: 3%; */
     font-size: 1.4rem;
-    border-radius: 4rem;   
+    border-radius: 3rem;   
     font-weight: bold;
-    margin: 4%;
+    margin: 3% auto;
     flex-shrink: 1;
 }
 
@@ -427,18 +496,20 @@ footer{
     flex-direction: column;
     color: rgba(85, 85, 85, 0.829);
     width: 90%;
+    height: auto;
     padding: 5%;
+    margin-top: 20px;
 }
 
 .contact-form-input form input{
     outline: none;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    height: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 2.0rem;
     width: 90%;
     background-color: rgba(255, 255, 255, 0.616);
     border: 0;
-    border-radius: 20px;
+    border-radius: 14px;
     padding-left: 5%;
     padding-right: 5%;    
     color: rgba(117, 116, 116, 0.829);
@@ -465,13 +536,14 @@ footer{
     height: 60px;
     width: 100px;
     margin-left: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    /* margin-top: 1rem; */
+    /* margin-bottom: 2rem; */
     border: 0;
     border-radius: 20px;
-    background-color: rgb(204, 56, 56);
-    color: rgb(202, 201, 201);
+    background-color: rgb(30, 155, 67);
+    color: rgb(201, 202, 201);
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .contact-form-input button:hover{

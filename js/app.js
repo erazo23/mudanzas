@@ -18,7 +18,7 @@ form.addEventListener('submit', function(e){
         if(data === 'error'){
             swal("Ups!","Verifica la información que ingresaste.","warning");
         }else{
-            swal("Solicitud Enviada!","Nuestros agentes se contactarán contigo en las próximas 24 horas.","success");
+            swal("Solicitud Enviada!","Nuestros agentes se contactarán contigo en las próximas 12 horas.","success");
 
         }
     })
@@ -26,10 +26,8 @@ form.addEventListener('submit', function(e){
         alert(err)
     })
 });
-
+//direccion de boton saber mas
 var x = document.getElementById('more');
-
-
-const cambiar = () => {location.href = './perfiles.html';}
-
+const cambiar = () => {location.href = './about.html';}
 x.onclick = cambiar;
+

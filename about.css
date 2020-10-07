@@ -7,6 +7,7 @@ body{
     font-size: 17px;
     font-family: 'Cabin', sans-serif;
     background-color: rgb(230, 230, 230);
+    margin: 0 auto;
 }
 
 ul{
@@ -25,13 +26,13 @@ ul li a{
     color:rgb(105, 104, 104);
 
 }
-
+/* navbar */
 .navbar{
     display: flex;
     min-height:20px;
     height: 55px;
     justify-content: space-between;
-    background-color: black;
+    background-color: white;
 }
 
 .navbar-menu{
@@ -47,6 +48,7 @@ ul li a{
     justify-content: space-evenly;
     align-items: stretch;
     width: auto;
+    margin-right: 2%;
 }
 
 .navbar-menu li{
@@ -54,9 +56,19 @@ ul li a{
     margin: 15px;
     text-align: center;
     font-family: 'Cabin', sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(44, 44, 44);
 }
 
 .navbar-menu li:hover{
     color:rgb(211, 76, 76);
+}
+
+/* MAIN */
+
+main{
+    background-color: teal;
+    display: flex;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
 }
